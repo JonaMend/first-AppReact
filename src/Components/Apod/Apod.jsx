@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react";
-const API_URL = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
+const API_URL = 'https://api.nasa.gov/planetary/apod?api_key=iYc1ZCs7SP2LsPszolz4Y7nsj25td2SEd4TzMzoR'
 const Apod = () => {
  const[apod,setApod] =useState([]);
 
@@ -21,6 +21,7 @@ return (
       <h1>{apod.title}</h1>
       <p>{apod.copyright}</p>   
       <p>{apod.explanation}</p>
+      <img src={apod.url} alt="bolc"/>
     </div>
 )
  
